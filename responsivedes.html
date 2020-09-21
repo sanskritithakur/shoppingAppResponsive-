@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="responsivedes.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="overlaymenu">
+        <div id="containerholder">
+            <a href="">Home</a>
+            <a href="">Catalogue</a>
+            <a href="">Brands</a>
+            <div id="verticaldiv"></div>
+            <a href="">Jobs</a>
+            <a href="">About</a>
+            <div id="close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+    </div>
+    <div id="innerdiv">
+        <nav>
+            <div id="leftnav">
+                <a href="" id="brandname">New Brand</a>
+                <a href="" class="links">item1</a>
+                <a href="" class="links">item2</a>
+                <a href="" class="links">item3</a>
+                <div id="horizontalline">
+                </div>
+                <a href="" class="links">item4</a>
+                <a href="" class="links">item5</a>
+            </div>
+            <div id="rightnav">
+                <i class="ri-search-line hideicon"></i>
+                <i class="ri-shopping-bag-line hideicon"></i>
+                <i class="ri-menu-line" id="menu"></i>
+            </div>
+        </nav>
+        <div id="verticalnav">
+            <a href="">link1</a>
+            <a href="">showallproduct</a>
+        </div>
+        <div id="bulgeria">
+            <div id="newline">
+                <div id="line99">
+                </div>
+                <a href="">newink</a>
+            </div>
+            <h4 id="opposite">opposite</h4>
+            <h3>bulgerian</h3>
+        </div>
+        <div id="greenbox">
+            <div id="lightgreen"></div>
+        </div>
+        <div id="imagepart"></div>
+        <div id="trend">
+            <h3>trends</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, rerum. Reiciendis architecto quaerat temporibus, quos magni impedit at eaque sunt debitis perspiciatis nulla consequuntur vero libero quam eum iste unde.</p>
+            <div id="circle">
+                <a href="">ORDER</a>
+            </div>
+        </div>
+        <div id="centerimg">
+            <div id="sidebar">
+                <h4>High fashion</h4>
+                <div id="line2">
+                </div><i class="ri-creative-commons-nd-line"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var overlaymenu = document.querySelector("#overlaymenu");
+    var closeit = document.querySelector("#close");
+    var menu = document.querySelector("#menu");
+
+    // var menu = document.querySelector("#close");
+    menu.addEventListener("click", function() {
+        overlaymenu.style.left = "0px";
+    });
+    closeit.addEventListener("click", function() {
+        overlaymenu.style.left = "-100%";
+    });
+</script>
+
+</html>
